@@ -1,0 +1,45 @@
+header {
+    padding: 20px 0;
+    background: linear-gradient(rgb(77, 76, 76), darkgray);
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    display: inline;
+    word-spacing: 10px;
+}
+
+nav {
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+
+nav a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+
+.logo {
+    width: 35%;
+    transform: translate(-350px);
+    padding: 20px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
