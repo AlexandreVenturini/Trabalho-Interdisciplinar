@@ -33,9 +33,14 @@ nav a:hover {
   }
 
 .logo {
-    width: 35%;
+    width: 20%;
     transform: translate(-350px);
     padding: 20px;
+}
+
+.logo2 {
+    width: 18%;
+    margin: 0 auto;
 }
 
 .caixa {
@@ -46,11 +51,12 @@ nav a:hover {
 
 .copyright {
     color: white;
-    font-size: 13px;
-    margin: 20px 0 0 0;
+    font-size: 15px;
+    margin: 0 auto;
 }
 
 footer {
+    margin: 0 auto;
     text-align: center;
     padding: 40px 0;
     background: linear-gradient(rgb(77, 76, 76), darkgray);
