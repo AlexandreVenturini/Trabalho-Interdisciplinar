@@ -43,3 +43,15 @@ nav a:hover {
     width: 940px;
     margin: 0 auto;
 }
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0 0;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(rgb(77, 76, 76), darkgray);
+}
