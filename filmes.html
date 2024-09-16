@@ -23,6 +23,12 @@
         </div>
     </header>
     <main>
+        <p>Filtros:
+            <input type="text" placeholder="Ano de Lançamento" oninput="filtroAno()">
+            <input type="text" placeholder="Classificação Indicativa" oninput="filtroClass()">
+            <input type="text" placeholder="Preço" oninput="filtroPreço()">
+            <input type="text" placeholder="Gênero do Filme" oninput="filtroGenero()">
+        </p>
         <table id="tabela-filmes">
             <thead>
                 <th>Nº</th>
@@ -32,6 +38,9 @@
                 <th>Classificação</th>
                 <th>Ano de Lançamento</th>
             </thead>
+            <tbody id="filmes">
+
+            </tbody>
         </table>
     </main>
     <footer>
