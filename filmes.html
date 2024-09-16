@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Filmes</title>
-    <link rel="stylesheet" href="/stylesheets/style-geral.css">
-    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="./stylesheets/style-geral.css">
+    <link rel="stylesheet" href="./stylesheets/reset.css">
 </head>
 
 <body>
     <header>
         <div class="caixa">
-            <img src="../img-geral/logo.png" alt="logo" class="logo">
+            <img src="./img-geral/logo.png" alt="logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -24,31 +24,31 @@
     </header>
     <main>
         <p>Filtros:
-            <input type="text" placeholder="Ano de Lançamento" oninput="filtroAno()">
-            <input type="text" placeholder="Classificação Indicativa" oninput="filtroClass()">
-            <input type="text" placeholder="Preço" oninput="filtroPreço()">
+            <input type="number" placeholder="Ano de Lançamento" oninput="filtroAno()">
+            <input type="number" placeholder="Classificação Indicativa" oninput="filtroClass()">
+            <input type="number" placeholder="Preço R$" oninput="filtroPreço()">
             <input type="text" placeholder="Gênero do Filme" oninput="filtroGenero()">
         </p>
-        <table id="tabela-filmes">
+        <table id="tabelaFilmes">
             <thead>
-                <th>Nº</th>
-                <th>Título</th>
-                <th>Gênero</th>
-                <th>Valor</th>
-                <th>Classificação</th>
-                <th>Ano de Lançamento</th>
+                    <th>Nº</th>
+                    <th>Título</th>
+                    <th>Gênero</th>
+                    <th>Valor</th>
+                    <th>Classificação</th>
+                    <th>Ano de Lançamento</th>
             </thead>
-            <tbody id="filmes">
+            <tbody id="tBodyFilmes">
 
             </tbody>
         </table>
     </main>
     <footer>
-        <img src="/img-geral/logo.png">
+        <img src="./img-geral/logo.png">
         <p class="copyright">&copy; Copyright CineAtrações</p>
     </footer>
-    <script src="script/vetores.js"></script>
-    <script src="script/script.js"></script>
+    <script src="./script/vetores.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
