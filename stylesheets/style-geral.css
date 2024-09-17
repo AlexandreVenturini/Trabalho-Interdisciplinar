@@ -1,3 +1,9 @@
+@import url(https://fonts.google.com/share?selection.family=Reddit+Sans+Condensed:wght@200..900);
+
+body {
+    font-family: "Reddit Sans Condensed", sans-serif;
+}
+
 header {
     padding: 20px 0;
     background: linear-gradient(rgb(77, 76, 76), darkgray);
@@ -33,7 +39,7 @@ nav a:hover {
   }
 
 .logo {
-    width: 30%;
+    width: 20%;
     transform: translate(-350px);
     padding: 20px;
 }
@@ -61,3 +67,4 @@ footer {
     padding: 40px 0;
     background: linear-gradient(rgb(77, 76, 76), darkgray);
 }
+
