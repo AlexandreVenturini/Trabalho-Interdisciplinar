@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Filmes</title>
+    <link rel="stylesheet" href="./stylesheets/style-filmes.css">
     <link rel="stylesheet" href="./stylesheets/style-geral.css">
     <link rel="stylesheet" href="./stylesheets/reset.css">
 </head>
@@ -15,7 +16,7 @@
             <img src="./img-geral/logo.png" alt="logo" class="logo">
             <nav>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
+                    <li><a href="inicio.html">Início</a></li>
                     <li><a href="filmes.html">Filmes</a></li>
                     <li><a href="destaques.html">Destaques</a></li>
                 </ul>
@@ -24,24 +25,25 @@
     </header>
     <main>
         <p>Filtros:
-            <input type="number" placeholder="Ano de Lançamento" oninput="filtroAno()">
-            <input type="number" placeholder="Classificação Indicativa" oninput="filtroClass()">
-            <input type="number" placeholder="Preço R$" oninput="filtroPreço()">
-            <input type="text" placeholder="Gênero do Filme" oninput="filtroGenero()">
+            <input type="number" id="filtroAno" placeholder="Ano de Lançamento" oninput="filtroAno()">
+            <input type="number" id="filtroClass" placeholder="Classificação Indicativa"
+                oninput="filtroClassificacao()">
+            <input type="number" id="filtroPreco" placeholder="Preço R$" oninput="filtroPreco()">
+            <input type="text" id="filtroGenero" placeholder="Gênero do Filme" oninput="filtroGenero()">
         </p>
-        <table id="tabelaFilmes">
-            <thead>
+        <div class="container">
+            <table id="tabelaFilmes">
+                <thead>
                     <th>Nº</th>
                     <th>Título</th>
                     <th>Gênero</th>
                     <th>Valor</th>
                     <th>Classificação</th>
                     <th>Ano de Lançamento</th>
-            </thead>
-            <tbody id="tBodyFilmes">
-
-            </tbody>
-        </table>
+                </thead>
+                <tbody id="tBodyFilmes"></tbody>
+            </table>
+        </div>
     </main>
     <footer>
         <img src="./img-geral/logo.png">
