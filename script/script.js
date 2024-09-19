@@ -75,7 +75,7 @@ function aplicarTodosFiltros() {
             (filtroAnoValue === '' || ano == filtroAnoValue) &&
             (filtroClassValue === '' || classificacao == filtroClassValue) &&
             (filtroPrecoValue === '' || preco <= filtroPrecoValue) &&
-            (filtroGeneroValue === '' || genero(filtroGeneroValue))
+            (filtroGeneroValue === '' || genero.includes(filtroGeneroValue))
         ) {
             gerarRowTBody(i);
         }
