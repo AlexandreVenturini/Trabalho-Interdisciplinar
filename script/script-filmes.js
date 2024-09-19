@@ -5,7 +5,8 @@ const tBodyFilmes = document.getElementById("tBodyFilmes");
 // Variáveis globais para armazenar os filtros
 let filtroAnoValue = "";
 let filtroClassValue = "";
-let filtroPrecoValue = "";
+let filtroPrecoValue1 = "";
+let filtroPrecoValue2 = "";
 let filtroGeneroValue = "";
 
 // Função para gerar a linha da tabela
@@ -49,9 +50,15 @@ function filtroClassificacao() {
     aplicarTodosFiltros();
 }
 
-// Função que filtra por preço
-function filtroPreco() {
-    filtroPrecoValue = document.getElementById('filtroPreco').value;
+//Função que filtra por preço minimo
+function filtroPrecoMenor() {
+    filtroPrecoValue1 = document.getElementById('filtroPreco1').value;
+    aplicarTodosFiltros();
+}
+
+// Função que filtra por preço máximo
+function filtroPrecoMaior() {
+    filtroPrecoValue2 = document.getElementById('filtroPreco2').value;
     aplicarTodosFiltros();
 }
 
@@ -74,7 +81,8 @@ function aplicarTodosFiltros() {
         if (
             (filtroAnoValue === '' || ano == filtroAnoValue) &&
             (filtroClassValue === '' || classificacao == filtroClassValue) &&
-            (filtroPrecoValue === '' || preco <= filtroPrecoValue) &&
+            (filtroPrecoValue1 === '' || preco >= filtroPrecoValue1) &&
+            (filtroPrecoValue2 === '' || preco <= filtroPrecoValue2) &&
             (filtroGeneroValue === '' || genero.includes(filtroGeneroValue))
         ) {
             gerarRowTBody(i);
