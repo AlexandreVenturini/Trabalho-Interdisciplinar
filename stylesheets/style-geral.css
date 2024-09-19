@@ -1,17 +1,21 @@
-@import url(https://fonts.google.com/share?selection.family=Reddit+Sans+Condensed:wght@200..900);
-
-body {
-    font-family: "Reddit Sans Condensed", sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
 
 header {
     padding: 20px 0;
     background: linear-gradient(rgb(77, 76, 76), darkgray);
 }
 
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
+body {
+    font-family: "Reddit Sans Condensed", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 nav a {
@@ -22,49 +26,37 @@ nav a {
     color: black;
 }
 
-nav ul {
-    display: inline;
-    word-spacing: 10px;
-}
-
-nav {
-    position: absolute;
-    top: 45%;
-    right: 0;
-}
-
 nav a:hover {
     color: whitesmoke;
     text-decoration: underline;
-  }
-
-.logo {
-    width: 20%;
-    transform: translate(-350px);
-    padding: 20px;
 }
 
-.logo2 {
-    width: 18%;
-    margin: 0 auto;
+.logo {
+    width: 150px;
+    padding: 0;
 }
 
 .caixa {
-    position: relative;
-    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.logo2 {
+    width: 150px;
+    margin-bottom: 10px;
 }
 
 .copyright {
-    color: white;
-    font-size: 15px;
-    margin: 0 auto;
+    font-size: 14px;
 }
 
 footer {
-    margin: 0 auto;
     text-align: center;
     padding: 40px 0;
     background: linear-gradient(rgb(77, 76, 76), darkgray);
+    color: white;
 }
-
