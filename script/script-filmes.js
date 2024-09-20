@@ -2,7 +2,7 @@
 const tabelaFilmes = document.getElementById("tabelaFilmes");
 const tBodyFilmes = document.getElementById("tBodyFilmes");
 
-// Variáveis globais para armazenar os filtros
+// Variáveis para armazenar os filtros
 let filtroAnoValue = "";
 let filtroClassValue = "";
 let filtroPrecoValue1 = "";
@@ -12,6 +12,8 @@ let filtroGeneroValue = "";
 // Função para gerar a linha da tabela
 function gerarRowTBody(indice) {
     let trTabela = document.createElement("tr");
+
+    // Adicionando as células da linha com as informações dos filmes
     let tdNum = document.createElement("td");
     tdNum.textContent = indice + 1;
     let tdTitulo = document.createElement("td");
@@ -24,12 +26,16 @@ function gerarRowTBody(indice) {
     tdClass.textContent = vetClassificacoes[indice];
     let tdAno = document.createElement("td");
     tdAno.textContent = vetAnos[indice];
+
+    // Adiciona as células na linha
     trTabela.appendChild(tdNum);
     trTabela.appendChild(tdTitulo);
     trTabela.appendChild(tdGenero);
     trTabela.appendChild(tdValor);
     trTabela.appendChild(tdClass);
     trTabela.appendChild(tdAno);
+
+    // Adiciona a linha no corpo da tabela
     tBodyFilmes.appendChild(trTabela);
 }
 
@@ -70,14 +76,16 @@ function filtroGenero() {
 
 // Função que aplica todos os filtros
 function aplicarTodosFiltros() {
-    limparTabela();
-    
+    limparTabela(); // Limpa a tabela antes de adicionar as novas linhas
+
+    // Percorre todos os filmes e aplica os filtros
     for (let i = 0; i < vetTitulos.length; i++) {
         let ano = vetAnos[i];
         let classificacao = vetClassificacoes[i];
         let preco = vetValores[i];
         let genero = vetGeneros[i].toLowerCase();
 
+        // Verifica se o filme passa nos filtros aplicados
         if (
             (filtroAnoValue === '' || ano == filtroAnoValue) &&
             (filtroClassValue === '' || classificacao == filtroClassValue) &&
@@ -85,12 +93,12 @@ function aplicarTodosFiltros() {
             (filtroPrecoValue2 === '' || preco <= filtroPrecoValue2) &&
             (filtroGeneroValue === '' || genero.includes(filtroGeneroValue))
         ) {
-            gerarRowTBody(i);
+            gerarRowTBody(i); // Gera a linha da tabela se o filme passar no filtro
         }
     }
 }
 
-// Loop para gerar todas as linhas
-for(let indice = 0; indice < vetTitulos.length; indice++){
+// Gera todas as linhas da tabela inicialmente (sem filtros)
+for (let indice = 0; indice < vetTitulos.length; indice++) {
     gerarRowTBody(indice);
 }
