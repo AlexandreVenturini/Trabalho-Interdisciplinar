@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="./stylesheets/style-geral.css">
     <link rel="stylesheet" href="./stylesheets/style-filmes.css">
 </head>
-
 <body>
     <header>
         <div class="caixa">
@@ -24,34 +22,37 @@
         </div>
     </header>
     <main>
-        <p>Filtros:
-            <input type="year" id="filtroAno" placeholder="Ano de Lançamento" oninput="filtroAno()">
-            <input type="number" id="filtroClass" placeholder="Classificação Indicativa"
-                oninput="filtroClassificacao()">
-            <input type="number" id="filtroPreco1" placeholder="Preço Mínimo R$" oninput="filtroPrecoMenor()">
-            <input type="number" id="filtroPreco2" placeholder="Preço Máximo R$" oninput="filtroPrecoMaior()">
-            <input type="text" id="filtroGenero" placeholder="Gênero do Filme" oninput="filtroGenero()">
-        </p>
-        <div class="container">
+        <section class="filtros">
+            <p>Filtros:</p>
+            <div class="filtros-container">
+                <input type="year" id="filtroAno" placeholder="Ano de Lançamento" oninput="filtroAno()">
+                <input type="number" id="filtroClass" placeholder="Classificação Indicativa" oninput="filtroClassificacao()">
+                <input type="number" id="filtroPreco1" placeholder="Preço Mínimo R$" oninput="filtroPrecoMenor()">
+                <input type="number" id="filtroPreco2" placeholder="Preço Máximo R$" oninput="filtroPrecoMaior()">
+                <input type="text" id="filtroGenero" placeholder="Gênero do Filme" oninput="filtroGenero()">
+            </div>
+        </section>
+        <section class="container">
             <table id="tabelaFilmes">
                 <thead>
-                    <th>Nº</th>
-                    <th>Título</th>
-                    <th>Gênero</th>
-                    <th>Valor R$</th>
-                    <th>Classificação</th>
-                    <th>Ano de Lançamento</th>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Título</th>
+                        <th>Gênero</th>
+                        <th>Valor R$</th>
+                        <th>Classificação</th>
+                        <th>Ano de Lançamento</th>
+                    </tr>
                 </thead>
                 <tbody id="tBodyFilmes"></tbody>
             </table>
-        </div>
+        </section>
     </main>
     <footer>
-        <img src="./img-geral/logo.png">
+        <img src="./img-geral/logo.png" class="logo2" alt="logo do rodapé">
         <p class="copyright">&copy; Copyright CineAtrações</p>
     </footer>
     <script src="./script/vetores.js"></script>
     <script src="./script/script-filmes.js"></script>
 </body>
-
 </html>

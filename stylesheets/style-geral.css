@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
 
+body {
+    font-family: "Reddit Sans Condensed", sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     padding: 20px 0;
     background: linear-gradient(rgb(77, 76, 76), darkgray);
-}
-
-body {
-    font-family: "Reddit Sans Condensed", sans-serif;
 }
 
 nav ul {
@@ -15,7 +18,6 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    align-items: center;
 }
 
 nav a {
@@ -24,6 +26,7 @@ nav a {
     font-size: 22px;
     text-decoration: none;
     color: black;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -33,7 +36,6 @@ nav a:hover {
 
 .logo {
     width: 150px;
-    padding: 0;
 }
 
 .caixa {
@@ -45,6 +47,13 @@ nav a:hover {
     margin: 0 auto;
 }
 
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(rgb(77, 76, 76), darkgray);
+    color: white;
+}
+
 .logo2 {
     width: 150px;
     margin-bottom: 10px;
@@ -52,11 +61,4 @@ nav a:hover {
 
 .copyright {
     font-size: 14px;
-}
-
-footer {
-    text-align: center;
-    padding: 40px 0;
-    background: linear-gradient(rgb(77, 76, 76), darkgray);
-    color: white;
 }

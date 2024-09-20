@@ -1,17 +1,38 @@
+main {
+    padding: 20px;
+    width: 940px;
+    margin: 0 auto;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-bottom: 20px; /* Espaçamento entre as tabelas */
 }
 
 table {
-    border: 1px solid black;
+    width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
-table th,
-table td {
-    padding: 10px;
-    border: 1px solid black;
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: rgb(77, 76, 76);
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #ddd;
 }

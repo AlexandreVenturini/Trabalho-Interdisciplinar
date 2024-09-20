@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="./stylesheets/style-geral.css">
     <link rel="stylesheet" href="./stylesheets/style-destaques.css">
 </head>
-
 <body>
     <header>
         <div class="caixa">
@@ -27,9 +25,11 @@
         <div class="container">
             <table id="tabelaPreco">
                 <thead>
-                    <th>Nº</th>
-                    <th>Gênero</th>
-                    <th>Quantidade por Gênero</th>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Gênero</th>
+                        <th>Quantidade por Gênero</th>
+                    </tr>
                 </thead>
                 <tbody id="tBodyFilmesPreco"></tbody>
             </table>
@@ -37,21 +37,22 @@
         <div class="container">
             <table id="tabelaGenero">
                 <thead>
-                    <th>Nº</th>
-                    <th>Gênero</th>
-                    <th>Titulo Mais Caro de Cada Gênero</th>
-                    <th>Valor R$</th>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Gênero</th>
+                        <th>Título Mais Caro de Cada Gênero</th>
+                        <th>Valor R$</th>
+                    </tr>
                 </thead>
                 <tbody id="tBodyFilmesGenero"></tbody>
             </table>
         </div>
     </main>
     <footer>
-        <img src="./img-geral/logo.png" alt="logo">
+        <img src="./img-geral/logo.png" class="logo2" alt="logo do rodapé">
         <p class="copyright">&copy; Copyright CineAtrações</p>
     </footer>
     <script src="./script/vetores.js"></script>
     <script src="./script/script-destaques.js"></script>
 </body>
-
 </html>
